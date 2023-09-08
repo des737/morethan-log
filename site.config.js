@@ -10,12 +10,12 @@ const CONFIG = {
     github: "des737",
     instagram: "",
   },
-  projects: [],
-  //  {
-  //     name: `ブログ`,
-  //    href: "https://github.com/des737/morethan-log",
-  //  },
-  //],
+  projects: 
+    {
+      name: ``,
+     href: "",
+   },
+  ],
   // blog setting (required)
   blog: {
     title: "ブログ",
