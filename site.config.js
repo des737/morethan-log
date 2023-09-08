@@ -10,7 +10,7 @@ const CONFIG = {
     github: "des737",
     instagram: "",
   },
-  projects: 
+  projects: [
     {
       name: ``,
      href: "",
