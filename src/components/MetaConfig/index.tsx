@@ -13,6 +13,7 @@ export type MetaConfigProps = {
 const MetaConfig: React.FC<MetaConfigProps> = (props) => {
   return (
     <Head>
+      <meta name="google-site-verification" content="tcXQtEtgtQEGJKAfa9YIvnwRNcKggaXAMbt7KjqePrs" />
       <title>{props.title}</title>
       <meta name="robots" content="follow, index" />
       <meta charSet="UTF-8" />
