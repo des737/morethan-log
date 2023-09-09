@@ -18,6 +18,7 @@ const Header: React.FC<Props> = ({ fullWidth }) => {
           <NavBar />
         </div>
       </div>
+      <meta name="google-site-verification" content="tcXQtEtgtQEGJKAfa9YIvnwRNcKggaXAMbt7KjqePrs" />
     </StyledWrapper>
   )
 }
