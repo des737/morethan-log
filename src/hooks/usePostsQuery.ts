@@ -5,6 +5,7 @@ import { TPost } from "src/types"
 const usePostsQuery = () => {
   const { data } = useQuery({
     queryKey: queryKey.posts(),
+    queryFn: () => [] as TPost[],
     initialData: [] as TPost[],
     enabled: false,
   })

@@ -11,8 +11,9 @@ const useScheme = (): [Scheme, SetScheme] => {
 
   const { data } = useQuery({
     queryKey: queryKey.scheme(),
+    queryFn: () => "light" as Scheme,
     enabled: false,
-    initialData: "light",
+    initialData: "light" as Scheme,
   })
 
   const scheme = data === "light" ? "light" : "dark"

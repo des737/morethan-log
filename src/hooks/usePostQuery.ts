@@ -8,6 +8,7 @@ const usePostQuery = () => {
   const { slug } = router.query
   const { data } = useQuery<PostDetail>({
     queryKey: queryKey.post(`${slug}`),
+    queryFn: () => undefined as unknown as PostDetail,
     enabled: false,
   })
 
