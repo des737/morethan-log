@@ -11,15 +11,21 @@ const useMermaidEffect = () => {
       document.getElementsByClassName("language-mermaid")
     if (!elements) return
 
-    for (let i = 0; i < elements.length; i++) {
-      mermaid.render(
-        "mermaid" + i,
-        elements[i].textContent || "",
-        (svgCode: string) => {
-          elements[i].innerHTML = svgCode
+    const renderMermaid = async () => {
+      for (let i = 0; i < elements.length; i++) {
+        try {
+          const { svg } = await mermaid.render(
+            "mermaid" + i,
+            elements[i].textContent || ""
+          )
+          elements[i].innerHTML = svg
+        } catch (error) {
+          console.error("Mermaid render error:", error)
         }
-      )
+      }
     }
+
+    renderMermaid()
   }, [])
 
   return

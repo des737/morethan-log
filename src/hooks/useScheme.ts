@@ -29,6 +29,7 @@ const useScheme = (): [Scheme, SetScheme] => {
 
     const scheme = getCookie("scheme")
     setScheme(scheme === "dark" ? "dark" : "light")
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return [scheme, setScheme]
